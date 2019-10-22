@@ -1,0 +1,41 @@
+p
+{
+    font-family: helvetica;
+    color: aliceblue;
+}
+
+
+* {box-sizing: border-box;}
+
+.calendar_grid
+{
+    position: relative;
+    display: inline-grid;
+    grid-auto-columns: auto auto auto auto auto auto auto;
+    grid-gap:1px;
+    padding: 1px;
+    grid-auto-rows: auto auto auto auto auto auto;
+}
+
+.calendar_grid > *
+{
+    text-align: right;
+    padding: 40px 30px;
+    font-size: 20px;
+}
+
+.calendar_grid .current-month
+{
+    text-align: center;
+    padding: 12px 10px;
+    font-size: 28px;
+    grid-column-start: 1;
+    grid-column-end: 8;
+}
+
+.calendar_grid .weekday
+{
+    text-align: center;
+    padding: 12px 10px;
+    font-size: 13px;
+}

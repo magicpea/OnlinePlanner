@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link th:href="@{/css/login.css}" rel="stylesheet"/>
+</head>
+<!--<script type="text/javascript">-->
+    <!--document.getElementById("loginButton").onclick = function () {-->
+        <!--location.href = "templates/monthlyView.html";-->
+    <!--}-->
+<!--</script>-->
+<body>
+<div class ="border">
+<div class= "body">
+<h1>Login</h1>
+<form action="templates/monthlyView.html">
+
+        <h3>Username</h3><input type = "text" class="user"><br><br>
+        <h3>Password</h3><input type = "text" class="pass"><br><br>
+    <a type="submit" class="login" id="loginButton" href="/monthlyView">Login</a>
+    </form><br>
+<a href="/templates/passReset.html">Forgot Password</a><br><br>
+<div> Don't have an account? Sign Up <a href="/signup">Here</a></div>
+</div>
+</div>
+</body>
+</html>
+

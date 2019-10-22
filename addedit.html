@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!--<script type = "text/javascript" src = "/javaScript/addedit.js"></script>-->
+    <link th:href="@{/css/addedit.css}" rel="stylesheet"/>
+    <title>Add and Edit Calendar</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<button id="myBtn">Add New Event</button>
+<div id="myModal" class ="modal" style="font-family: roboto, sans-serif">
+    <div class ="modal-content" style= "font-family: roboto, sans-serif">
+    <div class ="border">
+        <span class="close" id="closeWindow">&times;</span>
+        <div class="eventForms">
+        <p style = "font-family: roboto, sans-serif; font-size: 33px">New Event</p>
+        <input type="text" name="title" size="35%" placeholder="Event Title">
+        <input type="text" name="description" size="35%" placeholder="Description">
+        <input type="date" name="date" size="35%" placeholder="Date">
+        <!--<input type="text" name="tags" size="35%" placeholder="Tags">-->
+        <!--<button type="submit" id="submitForm" formaction="/monthlyView.html">Submit</button>-->
+            <form action="templates/weeklyView.html">
+                <button type="submit" id="submitForm" href="/weeklyView">Submit</button>
+            </form>
+        </div>
+    </div>
+    </div>
+</div>
+<script type = "text/javascript" th:src ="@{/js/addedit.js}"></script>
+</body>
+</html>

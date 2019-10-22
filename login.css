@@ -1,0 +1,64 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+body
+{
+    margin-left: 39%;
+    margin-top: 7%;
+}
+.body
+{
+padding: 10px 10px 10px 10px;
+font-family: "Roboto", sans-serif;
+/*margin-top:10%;
+margin-left: 35%;
+padding-right:5%;
+padding-left:5%;
+padding-top:30%:
+padding-bottom: 30%;
+text-align: center;
+display:inline-block;*/
+/*background-color:aliceblue;*/
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 300px;
+/*  margin: 0 auto 100px;*/
+/*  padding: 45px;*/
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+/*  padding-top: 35px;*/
+  color: #4d4d4d;
+}
+h1
+{
+padding:0;
+}
+a
+{
+color: black;
+
+}
+h3{
+padding:0;
+padding-top: 1%;
+margin:0;
+}
+.login
+{
+padding-top:2%;
+padding-bottom:2%;
+padding-right:3%;
+padding-left:3%;
+background-color:#D3D3D3;
+margin-top: 3%;
+text-decoration: none;
+}
+.border
+{
+padding: 35px 35px 35px 35px;
+background: aliceblue;
+box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+font-family: "Roboto", sans-serif;
+z-index: 2;
+max-width: 250px;
+}

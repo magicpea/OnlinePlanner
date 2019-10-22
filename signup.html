@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link th:href="@{/css/signup.css}" rel="stylesheet"/>
+
+
+</head>
+<body>
+
+<div class= "body">
+    <h1>Sign Up</h1>
+    <form action="templates/monthlyView.html">
+        <h3>First Name</h3><input type = "text" class="user"><br><br>
+        <h3>Last Name</h3><input type = "text" class="pass"><br><br>
+        <h3>Email</h3><input type = "email" class="user"><br><br>
+        <h3>Username</h3><input type = "text" class="user"><br><br>
+        <h3>Password</h3><input type = "password" class="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"><br><br>
+        <h3>Confirm Password</h3><input type = "password" class="pass2"><br><br>
+        <button type="submit" class="login" id="loginButton" onClick="self.location='/login'">Sign Up</button>
+    </form><br>
+    <!--<div id="message">-->
+        <!--<h3>Password must contain the following:</h3>-->
+        <!--<p id="letter" class="invalid">A <b>lowercase</b> letter</p>-->
+        <!--<p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>-->
+        <!--<p id="number" class="invalid">A <b>number</b></p>-->
+        <!--<p id="length" class="invalid">Minimum <b>8 characters</b></p>-->
+    <!--</div>-->
+
+</div>
+<!--<script type="text/javascript" th:src="@{/js/signup.js}"></script>-->
+</body>
+</html>
